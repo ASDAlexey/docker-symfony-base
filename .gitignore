@@ -1,0 +1,9 @@
+src/
+.idea/
+.env
+.DS_Store
+nginx/configs/conf.d/*.conf
+app/config/conf.d/
+app/config/*.yml
+!app/config/.gitkeep
+.htpasswd
