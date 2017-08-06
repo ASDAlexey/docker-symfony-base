@@ -7,3 +7,4 @@ app/config/conf.d/
 app/config/*.yml
 !app/config/.gitkeep
 .htpasswd
+/images/
