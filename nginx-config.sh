@@ -5,7 +5,7 @@
 	echo '    root /var/www/html/'$APP_NAME'/web;'; \
 	echo '    index app.php;'; \
 	echo ; \
-	echo '	server_name '$SERVER_NAME';'; \
+	#echo '	server_name '$SERVER_NAME';'; \
     echo '  location / {'; \
     echo '      try_files $uri /app.php$is_args$args;'; \
     echo '  }'; \
