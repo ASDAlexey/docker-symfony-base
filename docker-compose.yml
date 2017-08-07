@@ -19,7 +19,7 @@ services:
     volumes:
      - ./src:/var/www/html/${APP_NAME}:cached
      - ./images/products:/var/www/html/${APP_NAME}/web/images/products
-     - ./app/config/parameters.yml:/var/www/html/${APP_NAME}/app/config/parameters.yml
+#     - ./app/config/parameters.yml:/var/www/html/${APP_NAME}/app/config/parameters.yml
 #     - ./app/config/conf.d/docker-php-ext-xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
   web-srv:
     image: nginx
