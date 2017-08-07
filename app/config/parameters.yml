@@ -1,15 +1,6 @@
-# This file is auto-generated during the composer install
 parameters:
-    database_host: db
-    database_port: 3306
-    database_name: symfony-base
-    database_user: user
-    database_password: 121314
-    mailer_transport: smtp
-    mailer_host: 127.0.0.1
-    mailer_user: null
-    mailer_password: null
-    secret: ThisTokenIsNotSoSecretChangeIt
-    product_image:
-      uri_prefix: /images/products/
-      upload_destination: '%kernel.root_dir%/../web/images/products'
+  database_host: db
+  database_port: 3306
+  database_name: symfony-base
+  database_user: user
+  database_password: 121314
