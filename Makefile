@@ -4,7 +4,7 @@ export $(shell sed 's/=.*//' .env)
 
 .PHONY: clone rebuild up stop restart status console-app console-db console-nginx clean help
 
-docker-env: clone symfony-parameters nginx-config up composer-install status
+docker-env: clone nginx-config up composer-install status
 
 dialog:
 	@. ./dialog.sh
