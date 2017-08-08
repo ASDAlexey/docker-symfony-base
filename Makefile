@@ -4,7 +4,7 @@ export $(shell sed 's/=.*//' .env)
 
 .PHONY: clone rebuild up stop restart status console-app console-db console-nginx clean help
 
-docker-env: clone symfony-parameters nginx-config up migration composer-install status
+docker-env: clone symfony-parameters nginx-config up composer-install status
 
 dialog:
 	@. ./dialog.sh
@@ -77,10 +77,6 @@ console-nginx:
 
 composer-install:
 	@docker-compose exec app bash -c "cd /var/www/html/${APP_NAME}/ && composer install"
-	@$(MAKE) --no-print-directory permissions
-
-migration:
-	@docker-compose exec app bash -c "cd /var/www/html/${APP_NAME}/ && ./bin/console doctrine:migrations:migrate && php ./bin/console doctrine:fixtures:load"
 	@$(MAKE) --no-print-directory permissions
 
 permissions:
