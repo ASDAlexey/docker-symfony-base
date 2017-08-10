@@ -31,4 +31,3 @@ make docker-env
 ```
 make help
 ```
- * If you need PhpMyAdmin you need uncomment it in docker-compose.yml file. It will be available via http://localhost:8080
