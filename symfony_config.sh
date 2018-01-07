@@ -7,6 +7,10 @@ parameters:
     database_name: $MYSQL_DATABASE
     database_user: $MYSQL_USER
     database_password: $MYSQL_PASSWORD
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
     secret: $SYMFONY_SECRET
     product_image:
         uri_prefix: /images/products/
