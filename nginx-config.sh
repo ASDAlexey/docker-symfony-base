@@ -1,7 +1,7 @@
 #!/bin/bash
 { \
 	echo 'server {'; \
-	echo '    listen 80 default_server;'; \
+	echo '    listen 80;'; \
 	echo '    root /var/www/html/'$APP_NAME'/web;'; \
 	echo '    index app.php;'; \
 	echo ; \
